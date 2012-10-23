@@ -1,0 +1,314 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2012.7.25)  22 OCT 2012 20:28
+entering extended mode
+ %&-line parsing enabled.
+**PVDIS_SOM_v0
+(./PVDIS_SOM_v0.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
+erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
+ french, greek, monogreek, ancientgreek, croatian, hungarian, interlingua, ibyc
+us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
+tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
+turkish, ukenglish, ukrainian, loaded.
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size12.clo
+File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./scicite.sty
+LaTeX Info: Redefining \cite on input line 160.
+LaTeX Info: Redefining \nocite on input line 227.
+Package: scicite 2003/11/04  v 4.01
+)
+(/usr/share/texmf/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 90.
+
+(/usr/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+\c@lastnote=\count87
+ (./PVDIS_SOM_v0.aux)
+\openout1 = `PVDIS_SOM_v0.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 151.
+
+
+(/usr/share/texmf/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 159.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 159.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 159.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 159.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 159.
+
+Overfull \hbox (234.14935pt too wide) in paragraph at lines 159--159
+ [][] 
+ []
+
+[1
+
+]
+Overfull \vbox (278.49213pt too high) has occurred while \output is active []
+
+
+[2]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 165.
+ (./XZ/som_abstract.tex) (./PR/som_formalism.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+
+
+LaTeX Warning: Reference `sec_2coeff' on page 3 undefined on input line 4.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 63.
+
+LaTeX Warning: Citation `Prescott:1978tm' on page 3 undefined on input line 63.
+
+
+
+LaTeX Warning: Citation `Prescott:1979dh' on page 3 undefined on input line 63.
+
+
+) (./RM/som_apparatus.tex [3]
+
+LaTeX Warning: Citation `SLAC' on page 4 undefined on input line 7.
+
+
+LaTeX Warning: Citation `happex' on page 4 undefined on input line 7.
+
+
+LaTeX Warning: Citation `prex' on page 4 undefined on input line 9.
+
+
+LaTeX Warning: Citation `pvdis_nim' on page 4 undefined on input line 22.
+
+[4]) (./RM/som_elebeam.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+
+
+LaTeX Warning: Citation `GramesWien2011' on page 5 undefined on input line 17.
+
+) (./RM/som_beam_moni.tex [5]
+
+LaTeX Warning: Citation `stripline' on page 6 undefined on input line 7.
+
+File: RM/fig5_ycorrbw.eps Graphic file (type eps)
+<RM/fig5_ycorrbw.eps>
+
+LaTeX Warning: Citation `A-NIM' on page 6 undefined on input line 32.
+
+
+LaTeX Warning: Reference `sec:daq' on page 6 undefined on input line 37.
+
+[6] [7]
+
+LaTeX Warning: Reference `sec:beam_fluc' on page 8 undefined on input line 81.
+
+[8]
+
+LaTeX Warning: Reference `bmod' on page 9 undefined on input line 142.
+
+) (./RM/som_HRS)
+
+! LaTeX Error: File `XZ/som_DAQ.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+(./RM/som_beam_pol.tex
+Overfull \hbox (9.26863pt too wide) in paragraph at lines 15--1
+[]\OT1/ptm/m/n/12 The spec-trom-e-ters are de-signed to have a large ac-cep-tan
+ce with ex-cel-lent res-o-lu-tion ($\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 E=E \OM
+S/cmsy/m/n/12 ^^X
+ []
+
+[9]
+
+LaTeX Warning: Citation `Price' on page 10 undefined on input line 16.
+
+[10]
+
+LaTeX Warning: Citation `Sinclair1' on page 11 undefined on input line 50.
+
+
+LaTeX Warning: Citation `happex_long' on page 11 undefined on input line 50.
+
+[11]
+
+LaTeX Warning: Citation `Baylac' on page 12 undefined on input line 123.
+
+
+LaTeX Warning: Citation `Neyret' on page 12 undefined on input line 123.
+
+
+LaTeX Warning: Citation `megan' on page 12 undefined on input line 123.
+
+
+LaTeX Warning: Citation `Jorda' on page 12 undefined on input line 141.
+
+
+LaTeX Warning: Citation `Falletto' on page 12 undefined on input line 145.
+
+) (./RM/som_target.tex [12]
+
+LaTeX Warning: Reference `fig6_gar_boil_kk' on page 13 undefined on input line 
+37.
+
+) [13] (./DW/som_selection.tex
+
+LaTeX Warning: Citation `PREX' on page 14 undefined on input line 11.
+
+) (./DW/som_pedestals.tex
+
+LaTeX Warning: Citation `Unser' on page 14 undefined on input line 11.
+
+[14]
+File: DW/fig24_rsh_linearbu.eps Graphic file (type eps)
+ <DW/fig24_rsh_linearbu.eps>
+File: DW/fig25_rsh_lineardb1.eps Graphic file (type eps)
+ <DW/fig25_rsh_lineardb1.eps> [15] [16]
+[17]) (./RM/som_beamcorr.tex
+
+LaTeX Warning: Reference `sec:adiabatic_damp' on page 18 undefined on input lin
+e 28.
+
+[18]
+
+LaTeX Warning: Reference `sec:laser' on page 19 undefined on input line 45.
+
+)
+
+! LaTeX Error: File `KP/som_pid.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+(./XZ/som_allbg.tex) (./KP/som_optics.tex) (./DW/som_q2.tex [19] [20])
+
+! LaTeX Error: File `DW/som_radcor.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+
+! LaTeX Error: File `DW/som_hats.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+
+! LaTeX Error: File `XZ/som_extraction.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+
+! LaTeX Error: File `XZ/som_summary.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+
+! LaTeX Error: File `DW/pvdis_bib_dw.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+(./RM/pvdis_bib_rm.tex [21] [22])
+
+! LaTeX Error: File `PR/pvdis_bib_pr.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+
+! LaTeX Error: File `KP/pvdis_bib_kp.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+
+! LaTeX Error: File `XZ/pvdis_bib_xz.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+[23] (./PVDIS_SOM_v0.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 835 strings out of 256217
+ 10013 string characters out of 1917095
+ 66426 words of memory out of 1500000
+ 4102 multiletter control sequences out of 10000+200000
+ 11955 words of font info for 35 fonts, out of 1200000 for 2000
+ 645 hyphenation exceptions out of 8191
+ 25i,8n,20p,309b,282s stack positions out of 5000i,500n,6000p,200000b,15000s
+
+Output written on PVDIS_SOM_v0.dvi (23 pages, 57432 bytes).

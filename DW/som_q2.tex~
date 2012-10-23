@@ -1,0 +1,24 @@
+
+\subsubsection{Reconstruction of $Q^2$ and $x$}\label{sec:ana_q2}
+
+The four-momentum transfer squared is 
+\begin{equation} \label{eq:qsq}
+Q^2 \hskip 0.05in
+= \hskip 0.05in 2 \hskip 0.02in E \hskip 0.02in 
+E^{\prime} \hskip 0.02in (1- {\rm cos}(\theta))
+\end{equation}
+where $E$ is the incident energy, $E^{\prime}$ is the
+final momentum or energy of the 
+electron ($E^{\prime} \gg m_e$) and
+$\theta$ is the scattering angle.  
+
+For the beam energy we used the Tiefenbach energy (need to 
+explain this) of ??? GeV
+and assumed a 3 MeV (???) average energy loss to the center of the 
+target which is applied
+this as a correction to the beam energy.  
+The error in the beam energy $E$ and $E^{\prime}$ are assumed
+conservatively to be 3 MeV based on a history of these measurements
+in Hall A.  The most important error is in $\theta$ ...
+
+Perhaps need a table of errors.

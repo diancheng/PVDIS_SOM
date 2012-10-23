@@ -1,0 +1,66 @@
+\section{PVDIS Formalism}\label{sec:formalism}
+
+This section discusses the formalism of parity-violating deep inelastic
+scattering.  Extraction of the $C_2$ coefficients (section ~\ref{sec_2coeff}) 
+follow from this formalism.
+
+%
+\begin {eqnarray}
+%A_{PV}  &=& \frac{\sigma_{+} - \sigma_{-}}{\sigma_{+} + \sigma_{-}}\nonumber\\
+%&=&(\frac{3G_FQ^2}{\pi \alpha^2 \sqrt{2}})(\frac{1}{5+R_S(x)+4R_C(x)})\nonumber\\
+%&&\times\left\{2C_{1u}[1+R_C(x)]-C_{1d}[1+R_S(x)]+\right.\nonumber\\ 
+%&&~~~\left.Y({2C_{2u}-C_{2d}})R_V(x)\right\}~,
+A_{PV}  &\equiv& \frac{\sigma_{+} - \sigma_{-}}{\sigma_{+} + \sigma_{-}}
+=\left(-\frac{G_FQ^2}{4\sqrt{2}\pi \alpha}\right)
+  \left(2g_A^e Y_1\frac{F_1^{\gamma Z}}{F_1^\gamma}+{g_V^e}Y_3\frac{F_3^{\gamma Z}}{F_1^\gamma}\right)~,
+%&&\times\left\{2C_{1u}[1+R_C(x)]-C_{1d}[1+R_S(x)]+\right.\nonumber\\
+%&&~~~\left.Y({2C_{2u}-C_{2d}})R_V(x)\right\}~,
+\end{eqnarray}
+where $Q^2$ is the negative of the 
+four-momentum transfer squared, $G_F$ is the Fermi weak coupling constant, 
+$\alpha$ is the fine structure constant, $Y_1$ and $Y_3$ are kinematic factors,
+and $x$ is the Bjorken scaling variable. %
+%(for details see Ref.~\cite{PR05-007,PR08-011}),
+In the quark parton model,
+\begin{eqnarray}
+ F_1^{\gamma Z} &=& \sum{g_V^q Q_q\left[q(x) + \bar q(x)\right]} \\
+ F_3^{\gamma Z} &=& \sum{g_A^q Q_q\left[q(x) - \bar q(x)\right]} \\
+ F_1^{\gamma} &=& \frac{1}{2}\sum{Q_q^2\left[q(x) + \bar q(x)\right]}
+\end{eqnarray}
+where $Q_q$ is the electric charge of quarks and 
+$q(x)$, $\bar q(x)$ are quark distribution functions.
+Rewriting $g_{A(V)}^e g_{V(A)}^q$ as $C_{1(2)q}$, and assuming
+$R^\gamma = R^{\gamma Z} = 0$, one has $Y_1=1$ and
+\begin {eqnarray}
+ A_{PV} &=&\left(\frac{3G_FQ^2}{\pi \alpha^2 \sqrt{2}}\right)\times \nonumber\\
+ && \frac{2C_{1u}[1+R_C(x)]-C_{1d}[1+R_S(x)]+Y_3(2C_{2u}-C_{2d})R_V(x)}{5+R_S(x)+4R_C(x)}~,
+\end{eqnarray}
+%
+where $R_{V,C,S}$ are related to quark distributions.
+The magnitude of the asymmetry is in the order of $10^{-4}$, or $10^2$~parts per million
+(ppm) at $Q^2=1$~(GeV/$c$)$^2$.
+
+
+The tree-level Standard Model effective weak coupling constants $C_{1,2q}$ are
+\begin{eqnarray}
+ C_{1u} = 2g^e_A g^u_V= -\frac{1}{2} + \frac{3}{4} \sin^2\theta_{W}~,
+ && ~C_{2u} = 2g^e_V g^u_A= - \frac{1}{2} + 2 \sin^2\theta_{W}~,\nonumber\\
+ C_{1d} = 2g^e_A g^d_V= \frac{1}{2} - \frac{2}{3} \sin^2\theta_{W}~,
+ && ~C_{2d} = 2g^e_V g^d_A=  \frac{1}{2} - 2 \sin^2\theta_{W}~,\nonumber
+\end{eqnarray}
+with $\theta_W$ the weak mixing angle. 
+The goal of JLab E08-011 is to measure the PVDIS asymmetries to a statistical precision of 
+3\% for the $Q^2 = 1.1 {\rm GeV}^2$ point and 4\% for the the $Q^2 = 1.9 {\rm GeV}^2$ point.
+In addition, the systematic uncertainty goal is $<3\%$, 
+and under the assumption that hadronic physics corrections are small, 
+our goal is to extract from these asymmetries the effective coupling 
+constant combination $(2C_{2u} - C_{2d})$. 
+The magnitude of the asymmetries is expected to be $90$ and $170$~ppm for the two
+measured kinematics of $Q^2=1.1$ and $1.9$~(GeV/$c$)$^2$, respectively. 
+To achieve the required precision, event rates up to $500$~kHz are expected.
+%
+Although this is not the first time the PVDIS asymmetries are measured, the only
+preceeding PVDIS measurement was carried out at SLAC~\cite{Prescott:1978tm,Prescott:1979dh}
+about 35 years ago, with a $\approx 9$\% statistical and a $\approx 9$\% systematic uncertainties. 
+The increased precision of this experiment required better controls of all systematic
+uncertainties.

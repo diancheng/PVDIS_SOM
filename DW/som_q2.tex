@@ -1,0 +1,54 @@
+
+\subsubsection{Reconstruction of $Q^2$ and $x$}\label{sec:ana_q2}
+
+The four-momentum transfer squared is 
+\begin{equation} \label{eq:qsq}
+Q^2 \hskip 0.05in
+= \hskip 0.05in 2 \hskip 0.02in E \hskip 0.02in 
+E^{\prime} \hskip 0.02in (1- {\rm cos}(\theta))
+\end{equation}
+where $E$ is the incident energy, $E^{\prime}$ is the
+final momentum or energy of the 
+electron ($E^{\prime} \gg m_e$) and
+$\theta$ is the scattering angle.  
+
+For the beam energy we used the Tiefenbach energy (need to 
+explain this) of ??? GeV
+and assumed a 3 MeV (???) average energy loss to the center of the 
+target which is applied
+this as a correction to the beam energy.  
+The error in the beam energy $E$ and $E^{\prime}$ are assumed
+conservatively to be 3 MeV based on a history of these measurements
+in Hall A.  The most important error is in $\theta$ ...
+
+Perhaps need a table of errors.
+
+%the following is copied from Bob's v1 but according to the new outline should be separated into two simulations. The HAMC should go into section ``Q2 reconstruction'' (above), the HATS should be a stand-alone subsection of ``Analysis''.
+
+\subsection{Simulation}
+
+Two simulation packages were used to support the analysis of this experiment.
+The package called ``hamc'' (Hall A Monte Carlo) was used to simulate
+the events and the spectrometer acceptance, while a second package
+called ``hats'' (Hall A Trigger Simulation) was used to simulate the
+response of the trigger used to identify electrons and pions, providing
+a calculation of our deadtime.
+
+In ``hamc'', events are generated using a physics class that has information about the cross section and asymmetry.  
+The tracks are generated uniformly in solid angle 
+\hskip 0.05in $d\Omega = sin(\theta) \hskip 0.02in d\theta \hskip 0.02in d\phi$ \hskip 0.05in and 
+the results later weighted by the differential cross section $\frac{d\sigma}{d\Omega}$. 
+The simulated tracks undergo multiple scattering in the target and 
+energy loss from the target from external and internal Brehmstrahlung as 
+well as ionization loss, 
+
+The generated four-vectors are transported to the detector in the HRS focal plane using 
+a set of polynomials that model the trajectories of electrons through the magnetic fields.
+The beam raster is simulated, which produces a smearing of the beam on target.
+The events are transported to intermediate apertures such as the collimator 
+or the entrance to quadrupoles. 
+Events that reach the HRS focal plane and intersect the detectors are integrated 
+to compute the total rate and average asymmetry.
+
+Here describe ``hats'' ...
+

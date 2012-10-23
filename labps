@@ -1,0 +1,8 @@
+latex $1
+bibtex $1
+latex $1
+%maketex -ps $1.pdf
+dvips -f -t letter $1.dvi > $1.ps
+ps2pdf $1.ps
+acroread $1.pdf &
+
