@@ -29,12 +29,13 @@ than 1 $\mu$m.}
 \end{figure}
 
 To measure the beam intensity, microwave cavity BCMs have been
-developed at Jefferson Lab~\cite{A-NIM}. The precision $\delta(\asy_I)$ that has
+developed at Jefferson Lab~\cite{A-NIM}. 
+The precision $\delta(\asy_I)$ that has
 been achieved for a 30 ms beam window at 100 $\mu$A is $4\times
 10^{-5}$. This superior resolution is a 
 result of good radiofrequency (rf)
-instrumentation as well as a high resolution 18-bit ADC, which
-will be discussed in section \ref{sec:daq}.
+instrumentation as well as a high resolution of the 18-bit ADC
+(sec \ref{sec:daq}).
 
 Let the detected scattered flux of electrons be $D$ in each spectrometer,
 and the beam current $I$,
@@ -60,11 +61,12 @@ where $+$ and $-$ denote the two helicity states in a pair.
 
 A major goal of the experimental design is to $\sigma(\asy_d)$ should be
 dominated by the counting statistics in the scattered flux.
-As shown by fig N in ref ~\cite{pvdis_nim}, this goal was met.
+As shown by fig 10 in ref ~\cite{ref:pvdis_nim}, this goal was met.
 
 There are two key parameters for each experimentally measured
 quantity $M$, such as detector rate, beam intensity, or beam position. 
-The first is $\sigma(\Delta M)$, the size of the relative window pair-to-window pair
+The first is $\sigma(\Delta M)$, the size of the relative 
+window pair-to-window pair
 fluctuations in $\Delta M\equiv M_{+} - M_{-}$, which is affected by
 real fluctuations in the electron flux. The second is
 $\delta(\Delta M)$, the relative accuracy with which the window
@@ -74,7 +76,7 @@ value, which is dominated by instrumentation noise.
 If $\sigma(\Delta M)$ is large enough, it might mean that there
 are non-statistical contributions to $\sigma(\asy_d)$ so that the
 latter is no longer dominated by counting statistics. In this
-case, it is crucial that $\delta(\Delta M)\ll\sigma(\Delta M)$ so
+case, it is important that $\delta(\Delta M)\ll\sigma(\Delta M)$ so
 that window pair to window pair corrections for the fluctuations
 in $\Delta M$ can be made.
 
@@ -85,8 +87,9 @@ is window-to-window relative beam intensity
 fluctuations, $\sigma(A(I)) \equiv \sigma(\Delta I/2I)$,
 which were observed to vary between $2\times 10^{-4}$ and
 $2\times 10^{-3}$, depending on the quality of the laser and the
-beam tune. This is remarkable and a unique feature of the beam at
-Jefferson lab, since $\sigma(\asy_I)<\sigma(\asy_d)$. Nevertheless, the
+beam tune. This is a unique strength of the beam at 
+Jefferson lab, since $\sigma(\asy_I)<\sigma(\asy_d)$. 
+Nevertheless, the
 detector-intensity correlation can be exploited to remove the
 dependence of beam charge fluctuations on the measured asymmetry:
 \begin{equation}
@@ -110,7 +113,7 @@ coefficients that depend on the kinematics of the specific
 reaction being studied, as well as the detailed spectrometer and
 detector geometry of the experiment.
 
-By judicious choices of beam position monitoring devices (BPMs)
+With a careful choice of beam position monitoring devices (BPMs) 
 and their respective locations, several measurements of beam
 position can be made from which the average relative energy,
 position, and angle of approach of each ensemble of electrons in a
@@ -129,19 +132,13 @@ failures) that are characteristic of normal running conditions.
 During our experiment run, we found that $\sigma(\Delta M_j)$ varied
 between 1 and 10 $\mu$m and $\sigma (\asy_E)$ was typically less
 than $10^{-5}$. These fluctuations were small enough that their
-impact on $\sigma (\asy_d)$ was negligible. Indeed, we believe that a
-significant contribution to the fluctuations in each monitor
-difference $\Delta M$ was the intrinsic measurement precision
-$\delta(\Delta M_i)$. We elaborate on this in section
-~\ref{sec:beam_mon},
-where we discuss the monitoring instrumentation.
+impact on $\sigma (\asy_d)$ was negligible. 
 
-Another important consideration is the accuracy with which the
-coefficients $\beta_i$ are measured. As mentioned earlier, these
-coefficients were evaluated using beam modulation, and will be
-discussed in Sect.~\ref{bmod}.
+The coefficients $\beta_i$ were evaluated using beam modulation, and will be
+discussed in Sect.~\ref{sec:beamcorr}, where it is shown that the 
+corrections turned out to be neglible compared to the statistical 
+errors from counting statistics.
 
-The above discussion regarding measurement accuracy and its impact
-on $\sigma(\asy_d)$ is particularly relevant in the monitoring of the
-electron beam properties such as beam intensity, trajectory and
-energy.
+
+
+
