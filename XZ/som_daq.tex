@@ -1,0 +1,32 @@
+\subsubsection{Data Acquisition System}
+\label{sec:daq}
+
+The signals from our trigger that define electrons and 
+pions are sent to scalers (Struck Model 3801)
+where they are integrated over the helicity window.  
+The scalers are part of the HAPPEX DAQ ~\ref{ref:happex}
+which is a multiple-VME-crate DAQ system running under the CODA system
+developed at Jefferson Lab ~\cite{coda}.  
+Signals from the various beam monitors 
+are integrated and digitized by custom-built 
+VME integrating 18-bit ADCs.  The system is
+triggered at the 30 Hz rate of the helicity reversal,
+synchronized to the end of each helicity window
+with the first 0.5 msec of the pulse 
+blanked off to remove instabilities due to the switching of
+HV on the Pockels cell which controls the beam polarization.
+In addition to the scalers and ADCs, the DAQ reads
+input/output registers which record various information 
+such as the helicity.
+
+The scaler DAQ which counts triggers is designed
+to count event rates up to 1~MHz with hardware-based PID
+and with minimal deadtime of order 1\%.  
+The analysis
+of the deadtime is given in reference ~\ref{pvdis_nim}.
+The detectors (section ~\ref{sec_detector_system})
+provided the electron and pion triggers.  A schematic 
+and full description of the
+trigger is shown in ref ~\ref{pvdis_nim}.
+
+
