@@ -32,7 +32,7 @@ To measure the beam intensity, microwave cavity BCMs have been
 developed at Jefferson Lab~\cite{A-NIM}. 
 The precision $\delta(\asy_I)$ that has
 been achieved for a 30 ms beam window at 100 $\mu$A is $4\times
-10^{-5}$. This superior resolution is a 
+10^{-5}$. This resolution is a 
 result of good radiofrequency (rf)
 instrumentation as well as a high resolution of the 18-bit ADC
 (sec \ref{sec:daq}).
@@ -80,11 +80,12 @@ case, it is important that $\delta(\Delta M)\ll\sigma(\Delta M)$ so
 that window pair to window pair corrections for the fluctuations
 in $\Delta M$ can be made.
 
-As stated in \ref{sec:beam_fluc}, we desire that
-$\sigma(\asy_d)$ be dominated by counting statistics.
+We desire that $\sigma(\asy_d)$ be dominated by counting statistics;
+this minimizes the run time and demonstrates that we know
+the main source of our uncertainties.
 An example of possible non-statistical contributions
 is window-to-window relative beam intensity
-fluctuations, $\sigma(A(I)) \equiv \sigma(\Delta I/2I)$,
+fluctuations, $\sigma(\asy_I) \equiv \sigma(\Delta I/2I)$,
 which were observed to vary between $2\times 10^{-4}$ and
 $2\times 10^{-3}$, depending on the quality of the laser and the
 beam tune. This is a unique strength of the beam at 
@@ -97,8 +98,7 @@ dependence of beam charge fluctuations on the measured asymmetry:
 \left(\frac{\Delta D}{2D} - \frac{\Delta I}{2I}\right)_i \equiv
 (\asy_D - \asy_I)_i.
 \end{equation}
-(This is equation \ref{eq:asyraw}
-to first order.)
+which is equation \ref{eq:asyraw} to first order.
 
 Similarly, $\sigma(\asy_d)$ might be affected by random beam
 fluctuations in energy, position and angle. The corrections can be
@@ -136,8 +136,7 @@ impact on $\sigma (\asy_d)$ was negligible.
 
 The coefficients $\beta_i$ were evaluated using beam modulation, and will be
 discussed in Sect.~\ref{sec:beamcorr}, where it is shown that the 
-corrections turned out to be neglible compared to the statistical 
-errors from counting statistics.
+corrections were neglible compared to the errors from counting statistics.
 
 
 
