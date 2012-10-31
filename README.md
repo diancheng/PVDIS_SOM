@@ -43,6 +43,25 @@ IV. Extraction of Results                - X.Z. (6)
    C. Extraction of $C_2$ Coefficients (1)
    D. Discussion of Higher Twist Effects (2)
 
+<<<<<<< HEAD
+=======
+Oct 25
+
+Trying from tmp4
+
+Oct 25
+
+Trying from tmp5 on ifarm
+
+-- And again (4444)
+
+Oct 26
+
+Making a change from bobtest444, I hope.
+
+Hello ?  Oct 26 at 9 pm
+
+>>>>>>> fc68aac14a0056a169752df61872f67e2d04ab05
 
 
 
