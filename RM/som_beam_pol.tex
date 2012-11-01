@@ -144,6 +144,66 @@ is accumulated inside the cavity with a photon beam waist of the
 order of 150 $\mu$m and a photon polarization above 99\%, monitored
 online at the exit of the cavity \cite{Falletto}.
 
-The accuracy of the compton polarimeter ... (show a figure of $P_e$ vs
-time, and a table of systematics).
+
+\subsubsection{Beam Polarization Results}
+\label{sec:cpt_exp_meth}
+
+During our experimental run, the M{\o}ller polarimeter the entire time,
+while the Compton polarimeter initially suffered from a high background
+and only produced results in the last three weeks of the run.
+Figure ~\ref{fig:moller} shows the M{\o}ller polarimetry measurements during
+our experiment, and figure ~\ref{fig:compton} shows the Compton measurements
+together with M{\o}ller measurements that were taken during the time period.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics{RM/mollerpol.eps}
+\caption{Polarization history from the M{\o}ller polarimeter measurements. 
+The error bars include systematic error.}
+\label{fig:moller}
+\end{figure}
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics{RM/comptonpol.eps}
+\caption{Polarization history from Compton measurement (round points), 
+together with Moller measurements (square points) during the same time. 
+The error bars for Compton are statistical only, while for Moller include systematic.}
+\label{fig:compton}
+\end{figure}
+
+The average beam polarization from constant fit is $88.97\%$ for M{\o}ller and $89.45\%$ for Compton. 
+The way that we apply the beam polarization correction is as following:
+
+\begin{enumerate}
+\item{ \label{it:moller_cor} When there's no Compton measurements (before Dec 2), 
+only M{\o}ller results are used. Each Moller data point is used for the 
+consecutive days until the next data point is available.}
+
+\item{ When there are both Compton and M{\o}ller results (after Dec 2), 
+the Compton data are averaged first and then this average is 
+averaged with each Moller point. These results are applied 
+for correction in the same way as \ref{it:moller_cor}.}
+
+\item {The beam polariztion is corrected run by run. }
+\end{enumerate}
+
+The run-by-run averaged beam polarization corrections are shown in 
+table ~\ref{tab:polarimeter} for the different kinematics and
+spectrometers (Left/Right HRS).
+
+\begin{table}[!ht]
+  \begin{center}
+    \begin{tabular}{c|c|c|c}
+      \hline\hline
+                    &  Left Kine 1   &    Left Kine 2    & Right Kine 2 \\ \hline
+      Polarization  &  $88.18\%$      &    $89.29\%$       & $88.73\%$  \\ \hline
+      Uncertainty   &  $1.76\%$      &    $1.19\%$       & $1.50\%$  \\ \hline
+      \hline
+    \end{tabular}
+  \end{center}
+\label{tab:polarimeter}
+\end{table}
+
 
