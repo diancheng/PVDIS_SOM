@@ -1,0 +1,19 @@
+
+
+Stuff needed for PVDIS SOM.  
+
+1. A plot or a table of polarization measurements, both Compton and Moller.
+
+2. The average beam polarization during the run, separately Compton and
+Moller.
+
+3. A plot or a table of the dithering results, the corrections to 
+the asymmetry on a run-by-run basis.  Also the total average correction.
+It was negligible, I'm sure.
+
+4. A plot related to target boiling.  I'm thinking of the width in
+asymmetry vs beam current for a large raster, or a set of curves 
+for different raster.  The fan speed is another variable, so pick
+the highest speed.  I'm open to suggestions here.
+
+
