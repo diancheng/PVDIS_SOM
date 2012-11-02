@@ -1,6 +1,3 @@
-Was it really the Oct. 8 meeting? 22 days have passed and I have not 
-started writing!
-
 PVDIS_SOM
 =========
 
