@@ -1,20 +1,400 @@
 
-\subsection{Background Analysis}
+\subsection{Background Analysis}\label{sec:ana_allbg}
+
+{\bf numbers awaiting inputs:}
+
+\begin{itemize}
+\item pion and electron asymmetry results from wide triggers;
+
+\item analytic estimation of OR, for left kine 2 - Kai (this goes to NIM);
+
+\item e in pion contamination analysis, need to check results, and need all detector efficiency numbers - Kai (this goes to NIM);
+
+The above results will affect the pion asymmetry (corrected for electron contamination), which further affect
+1) the uncertainty in the main results due to pion contamination, and 2) evaluation of positron results; 
+
+\item Run-average deadtime correction for unblinding - Diancheng
+\end{itemize}
+
+\subsubsection{Charged Pion Background}
+
+Charged pions are produced from decays of nucleon resonances created by 
+electron scattering off nucleon or nuclear targets. For the pions to have the same
+momentum as DIS electrons, the parent nucleon resonance production must occur at 
+a lower $Q^2$ than DIS events, causing a smaller parity violation asymmetry than DIS electrons.
+This has been confirmed by the asymmetry of the pion triggers measured during the
+experiment. Furthermore, the high particle identification performance of the
+customized DAQ limited the pion contamination in the electron trigger to the
+$f=2\times 10^{-4}$ level or below~\cite{pvdis_nim}. Due to the small contamination, 
+effect of the pions was considered a dilution and no correction to the measurement
+electron was made. The total systematic uncertainty on the electron 
+DIS asymmetry due to pion contamination and pion asymmetry is:
+\begin{equation}
+ \Delta A = \sqrt{\left(\Delta f\right)^2+\left(f\frac{\vert{A_\pi}\vert+\Delta A_\pi}{A_e}\right)^2}~\label{eq:pionbg}
+\end{equation}
+where $f$ is the event fraction of the electron trigger that is from pions, $A_\pi$ is the 
+measured pion asymmetry with $\Delta A_\pi$ its uncertainty, and $A_e$ is the measured electron
+asymmetry. The term $\vert A_\pi\vert+\Delta A_\pi$ corresponds to how much the pion asymmetry differs
+from zero. Results for $f$ and its error bars are presented in Ref.~\cite{pvdis_nim}. Extraction of
+the pion asymmetry from the pion trigger asymmetry is described below. 
+The measured electron asymmetries before any corrections is
+made are $78.4$ and $140.5$~ppm for $Q^2=1.1$ and $1.9$~GeV$^2$, respectively.
+
+\bigskip
+\noindent
+{\bf pion asymmetry measurement}
+
+PID performance of both electron and pion triggers of the DAQ was reported in Ref.~\ref{pvdis_nim}. 
+To properly extract pion asymmetries from the trigger, one must properly account for the effect
+of electron contamination. Because electron contamination in the pion triggers, $f_{e/\pi}$, was
+relatively high and the electron asymmetries are larger than those of pions, corrections were applied
+to the (raw) asymmetries extracted from the pion triggers using
+\begin{eqnarray}
+  A_\pi^{corrected} = \frac{A_\pi^{raw}-f_{e/\pi}A_e}{1-f_{e/\pi}}~,
+\end{eqnarray}
+where $A_e$ is the electron asymmetry provided from the electron triggers. 
+
+\bigskip
+\noindent
+{\bf electron asymmetry uncertainty due to pion contamination}
+
+Results for the pion contamination in electron triggers $f_{\pi/e}$ and the electron contamination
+in pion triggers $f_{e/\pi}$ and their total uncertainties are shown in Table~\ref{tab:pionbg}. 
+These results were reported in Ref.~\ref{pvdis_nim}.
+Also shown are the the raw and the corrected pion asymmetries, and the 
+total uncertainty on the electron asymmetry due to pion contamination as calculated from Eq.~\ref{eq:pionbg}.
+
+\begin{table}
+ \caption{Pion asymmetry results and total uncertainty on electron asymmetry due to pion background.}\label{tab:pionbg}
+ \begin{tabular}{c|c|c|c}\hline
+  HRS                 & Left & Left & Right\\
+  $Q^2$ (GeV/$c$)$^2$ & 1.1 & 1.9 & 1.9 \\\hline
+  \multicolumn{4}{c}{narrow path}\\\hline
+  raw $A_\pi$ (ppm) & $-45.79\pm 7.98$(stat.) & $-14.00\pm 14.89$(stat.) & $-9.51\pm 4.22$(stat.) \\
+  $f_{e/\pi}$ & $0.564\pm 0.159$(syst.) & $0.0403\pm 0.0033$(syst.) & $0.0112\pm 0.0013$(syst.) \\
+% not the latest   corrected $A_\pi$ (ppm) & $-30.85\pm 12.84$(tot.) & $-8.91\pm 16.31$(tot.) & $-8.04\pm 4.27$(tot.)\\
+  corrected $A_\pi$ (ppm) & $$(tot.) & $$(tot.) & $$(tot.)\\
+  $A_e$ measured (ppm) & 78.4 & 140.5 & 140.5 \\
+  $f_{\pi/e}$ & $(1.618\pm 0.291)\times 10^{-4}$ & $(2.196\pm 0.345)\times 10^{-4}$ & $(1.987\pm 0.333)\times 10^{-4}$ \\
+% not the latest  ${\Delta A}\over{A}$ & $0.0000947$ & $0.0000524$ & $0.0000376$ \\\hline
+  ${\Delta A}\over{A}$ & $$ & $$ & $$ \\\hline
+  \multicolumn{4}{c}{wide path}\\\hline
+  raw $A_\pi$ (ppm) & $$(stat.) & $$(stat.) & $$(stat.) \\
+  $f_{e/\pi}$ & $$(syst.) & $$(syst.) & $$(syst.) \\
+  corrected $A_\pi$ (ppm) & $$(tot.) & $$(tot.) & $$(tot.)\\
+  $A_e$ measured (ppm) & 78.4(?) & 140.5(?) & 140.5(?) \\
+  $f_{\pi/e}$ & $(1.009\pm 0.240)\times 10^{-4}$ & $(1.833\pm 0.308)\times 10^{-4}$ & $(1.588\pm 0.314)\times 10^{-4}$ \\
+  ${\Delta A}\over{A}$ &           &           &           \\\hline
+ \end{tabular}
+\end{table}
+
+
+\subsubsection{Pair Production Background}
+
+Pair production background comes from nucleon resonance productions where the resonance
+decays into $\pi^0$'s, then through pion decay $\pi^0\to e^+e^-$. 
+The pair production from Bremsstrahlung photons is highly
+forward-peaked and is not significant for the kinematics proposed here.
+One therefore expect
+the pair production background to have an asymmetry that is comparable to the charged
+pion asymmetry reported above. This background was studied during the experiment by 
+reversing the spectrometer polarity, allowing detection of the positron alone in the $\pi^0$ decay. 
+The main focus of such positive polarity runs (or ``positron runs'') is to precisely
+determine the fractional contribution from pair production to the main electron trigger,
+$f_{e^+/e^-}$. Due to the relative low rate of positron events, this ratio can be extracted
+from the regular DAQ of which the PID performance and rate determination were well understood. 
+Asymmetry of positrons was recorded, although due to the very low rate of positrons the 
+uncertainty of such asymmetry measurement is large. Results for the asymmetry
+extracted from positive polarity runs (using the electron triggers of the DAQ, which are now
+effectively positron triggers) are shown in Table~\ref{tab:Apositron}.
+Note that there is a large $\pi^+$ contamination in the positron trigger but there
+was not enough data to correct this $\pi^+$ background.
+
+\begin{table}
+ \caption{Positron asymmetry results.}\label{tab:Apositron}
+ \begin{center}
+\begin{tabular}{c|c|c}\hline
+  HRS                 &{Left} & {Right}\\\hline
+  $Q^2$ (GeV/$c$)$^2$ & {1.1} & {1.9}\\\hline
+  raw $A_{e^+}$ (ppm), narrow & $723.2\pm 1154.7$(stat.) & $1216.0\pm 1304.5$(stat.) \\
+  raw $A_{e^+}$ (ppm), wide   & $742.4\pm 1151.5$(stat.) & $1199.0\pm 1304.5$(stat.)\\\hline % elog entry #107, latest
+\end{tabular}
+ \end{center}
+\end{table}
+
+Because the statistical uncertainties of the positron asymmetry results are large, we relied on the fact
+that $\pi^0$ must have similar asymmetry as $\pi^-$. We assume the $\pi^0$ asymmetry to be no larger than twice
+the value of $\pi^-$ asymmetry and estimate the uncertainty in the electron asymmetry due to positron background 
+as:
+
+\begin{equation}
+ \Delta A = \sqrt{\left(\Delta f_{e^+/e^-}\right)^2+\left(f_{e^+/e^-}\frac{\Delta{A_{e^+}}}{A_e}\right)^2}~,~\label{eq:posbg}
+\end{equation}
+where $\Delta A_{e^+}$ describes how much $A_{e^+}$ differs from zero and the value 
+$2(\vert A_\pi\vert +\Delta A_\pi)$ was used. Results for $f_{e^+/e^-}$ and their
+statistical errors are shown in Table~\ref{tab:positronbg}, and a $10\%$ systematic uncertainty is used
+for $\Delta f_{e^+/e^-}$ to account for possible error in positron identification from the high $\pi^+$ background 
+in the rate evaluation.
+Results for the electron asymmetry uncertainty due to pair production background 
+are also shown in Table~\ref{tab:positronbg}.
+\begin{table}
+ \caption{Results for positron contamination $f_{e^+/e^-}$ and total uncertainty on electron asymmetry 
+due to pair production background. The errors shown for $f_{e^+/e^-}$ are statistical only, and a 10\%
+systematic uncertainty was used in the evaluation of $\Delta A\over A$.}\label{tab:positronbg}
+\begin{tabular}{c|c|c|c}\hline
+  HRS                 & Left & Left & Right\\\hline
+  $Q^2$ (GeV/$c$)$^2$ & 1.1 & 1.9 & 1.9\\\hline
+  $f_{e^+/e^-}$         & $(2.504\pm 0.007)\times 10^{-4}$ & $(5.154\pm 0.001)\times 10^{-3}$
+                      & $(4.804\pm 0.001)\times 10^{-3}$\\\hline
+  ${\Delta A}\over{A}$ & $2.504\times 10^{-5}\circ{+}???$ & $5.154\times 10^{-4}\circ{+}???$
+                      & $4.804\times 10^{-4}\circ{+}???$ \\\hline
+\end{tabular}
+\end{table}
+
 
 \subsubsection{Target EndCap Correction}
 
-Scattering from the target aluminum windows contributed
-(0.5 $\pm$ 0.1)\% (???) to our detected signal.
-This background was measured by 
-inserting into the beam an empty
-aluminum target cell, similar to the one used to
-contain liquid deuterium, and measuring the 
-signal in our detector. 
-The thickness of the empty target cell walls is about 10 times
-that of the walls used in the deuterium cell, in
-order to compensate for the radiative
-losses in the deuterium cell.  
+Electrons scattered off the target aluminum endcaps cannot be separated from those scattered off
+the liquid deutrium. Fortunately events from target endcaps also belong to deep inelastic scattering
+and one expect the DIS formula for asymmetries (refer to equation in ``formalism'') to work for aluminum
+as well. Since Al is not an isoscalar nucleus, the Al PVDIS asymmetry differs from the deuterium and 
+a correction must be made. 
+Possible deviations for $A_{Al}$ to differ from the DIS formula is the nuclear effect similar to the EMC effect
+of the unpolarized, parity-conserving structure functions $F_{1,2}$, but one does not expect such effect
+to cause more then 20\% difference to $A_{Al}$ and this assumption will be used in the uncertainty estimation.
 
-The correction to our data arises from ... ??? ... explain the
-physics here; I guess if it's DIS it's then Aluminum is
-not much different from Deuterium ...
+The fractional event rate from the aluminum endcaps, $f_{Al/D}$, is assumed to be equal to the ratio of the endcap
+to liquid deuterium thickness, $\eta_{Al/D}$. 
+This is based on the assumption that the DIS cross section from Al is the same as that from D$_2$. 
+Using current data on the EMC effect, the difference in 
+DIS cross sections between Al and LD$_2$ indeed should be very small since the EMC ratio crosses unity
+between $x=0.2$ and $0.3$, exactly where data were taken during this experiment. 
+The target used for this experiment had entrance and exit endcaps measured to be $0.126\pm 0.011\pm 0.003$~mm
+and $0.100\pm 0.008\pm 0.003$~mm respectively, with the first error bar from the standard deviation of 
+multiple measurements at difference positions on the endcap, and the second error from calibration of
+the instrument. The ratio $\eta_{Al/D}$ is evaluated to be 
+$\eta_{Al/D}=(0.126+0.100)$~mm$\times 2.7$~g/cm$^3)/(20$~cm$\times 0.167$~g/cm$^3)=1.827\%$ with a total
+error of 0.115\%.
+
+The correction to the electron PVDIS asymmetry is applied as
+\begin{eqnarray}
+  A^{corrected} &=& A^{measured}(1+\delta_{Al}),~~\mathrm{with}~\delta_{Al} = -(\eta_{Al/D})\frac{A_{Al}-A_{D}}{A_D}.
+\end{eqnarray}
+The DIS formalism was used to evaluate the Al PVDIS asymmetry as:
+\begin{eqnarray}
+  A_{Al} &=& \frac{13A_p\sigma_p+14A_n\sigma_n}{13\sigma_p+14\sigma_n}~,
+\end{eqnarray}
+where $\sigma_{p(n)}$ is the DIS cross section off the proton (neutron) as calculated from structure function
+fits and $A_{p(n)}$ is the PVDIS asymmetry off the proton (neutron):
+\begin{eqnarray}
+  A_p &=& \left(-\frac{3 G_FQ^2}{2\sqrt{2}\pi \alpha}\right)
+    \frac{Y_1\left[2C_{1u}(u^++c^+)-C_{1d}(d^+ +s^+)\right]
+         +Y_3\left[2C_{2u}(u^-)-C_{2d}(d^-)\right]}
+         {4(u^++c^+)+(d^++s^+)}\\
+  A_n &=& \left(-\frac{3 G_FQ^2}{2\sqrt{2}\pi \alpha}\right)
+    \frac{Y_1\left[2C_{1u}(d^++c^+)-C_{1d}(u^++s^+)\right]
+         +Y_3\left[2C_{2u}(u^-)-C_{2d}(d^-)\right]}
+      {4(d^++c^+)+(u^++s^+)}
+\end{eqnarray}
+with $u^\pm\equiv u\pm \bar u$, $d^\pm\equiv d\pm\bar d$, $s^+\equiv s+\bar s$ and $c^+\equiv c+\bar c$.
+
+The total uncertainty due to target endcaps, assuming an up to 10\% difference in the Al vs. D$_2$ PVDIS
+asymmetry, is approximately
+\begin{eqnarray}
+  \frac{\Delta A}{A} &=& \sqrt{\left(\Delta\eta_{Al/D}\right)^2+\left((10\%)\eta_{Al/D}\right)^2}
+\end{eqnarray}
+where the second term dominates.
+Results for the endcap correction $\delta_{Al}$ and the uncertainty on the corrected electron asymmetry are
+given in Table~\ref{tab:albg}.
+\begin{table}
+ \caption{Correction applied to the measured asymmetry to account for the target
+aluminum endcaps.}\label{tab:albg}
+ \begin{center}
+\begin{tabular}{c|c|c}\hline
+  $Q^2$ (GeV/$c$)$^2$ & 1.1 & 1.9 \\\hline
+  $(A_{Al}-A_D)/A_D$  & $0.005670$ & $0.007268$ \\
+  $\delta_{Al}$       & $-1.036\times 10^{-4}$ & $-1.328\times 10^{-4}$ \\
+  ${\Delta A}\over{A}$ & $0.001827$ & $0.001827$\\\hline
+\end{tabular}
+ \end{center}
+\end{table}
+
+
+Events were also taken on a thick, ``dummy'' target consists of two thick aluminum endcaps the thickness
+approximately 10 times that of the liquid deuterium cell. The thickness was chosen such that the total radiation
+length of the dummy target matches that of the liquid D$_2$ target. However, due to limited beam time, 
+the asymmetry uncertainty collected from the aluminum dummy target was not precise enough to reduce
+the systematic uncertainty due to target endcaps.
+
+\subsubsection{Transverse Asymmetry Background}
+
+Transverse asymmetry background describes the effect of the electron beam spin polarized in the direction
+perpendicular (normal) to the scattering plane defined by the momentum vectors of the incident and the scattered 
+electrons $\vec k_e$ and $\vec k_e^\prime$. 
+This beam normal asymmetry is parity violating but differs from the PVDIS asymmetry caused
+by the longitudinal polarization of the beam, thus must be treated as a background of the measurement.
+Calculations at the pure partonic level show that this asymmetry is at the 0.5~ppm level at the kinematics
+of this experiment, but mechanism 
+beyond the parton level can enhance the asymmetry by 1-2 orders of magnitude~(cite Andrei Afanasev priv communication
+latest email 10/29/2012). Contribution from the beam normal asymmetry $A_n$ to the measured asymmetry 
+can be expressed as
+\begin{eqnarray}
+  \delta A = (A_n) \vec S\cdot \hat k_n~&\mathrm{with}&\vec k_n\equiv \hat k_e\times \hat k_e^\prime~~\mathrm{and}~
+\hat k_n=\vec k_n/\vert\vec k_n\vert~,
+\end{eqnarray}
+were $\vec S$ is the beam polarization vector.
+Denoting $\theta_0$ the central scattering angle of the spectrometer and $\theta_{tr}$ the average
+out-of-scattering-plane angle of the spectrometer acceptance as defined in Fig.~\ref{fig:ATkine}, 
+one has $\hat k_e=(0,0,1)$ and 
+$\hat k_e^\prime = (\sin\theta_0\cos\theta_{tr}, \sin\theta_0\sin\theta_{tr},\cos\theta_0)$~, 
+giving $\vec k_n=(-\sin\theta_0\sin\theta_{tr},\sin\theta_0\cos\theta_{tr},0)$
+and $\hat k_n = (-\sin\theta_{tr},\cos\theta_{tr},0)$, thus
+\begin{eqnarray}
+ \delta A &=& {A_n}\left[-S_H\sin\theta_{tr}+S_V\cos\theta_{tr}\right]
+\end{eqnarray}
+where $S_V$, $S_H$ and $S_L$ are respectively the electron's spin polarization components in the vertical,
+horizontal, and longitudinal directions. The value of $\theta_{tr}$ was determined
+from the simulation and was found to be less than 0.01~rad. Since the beam spin during production
+runs was controlled to $S_H<20\% P_b$ and $S_V<2\% P_b$ where $P_b$ is the beam polarization,  
+the $S_V$ term dominates the effect on the measured asymmetry.
+
+\begin{figure}
+ \caption{Kinematics of the transverse asymmetry background. The incident and the scattered electrons'
+momenta are $\vec k_e$ and $\vec k_e^\prime$, and $\vec S_{V,H,L}$ denote respectively 
+the incident electron's spin polarization
+components in the vertical, horizontal, and longitudinal directions. 
+The central scattering angle of the spectrometer is $\theta_0$ and the scattered electron's momentum
+has an out-of-plane angle denoted by $\theta_{tr}$.}\label{fig:ATkine}
+ \begin{center} 
+  \includegraphics[scale=1.0]{XZ/AT_kine.eps}
+ \end{center}
+\end{figure}
+
+
+During the experiment, the size of the beam transverse asymmetry was measured during dedicated ``transverse
+runs'' where the beam was fully polarized in the vertical direction, $S_H=S_L\approx 0$ and $S_V=P_b^T$ where
+$P_b^T$ is the beam polarization during the transverse asymmetry measurement. 
+The measurement thus provides the value $A_n^{m}=A_n P_b^{T}$. Since the maximum beam polarization 
+is the same for production and transverse asymmetry running, and the horizontal component of the beam
+spin $S_H$ is no more than 20\% during the production runs, the longitudinal beam polarization during production
+running, $S_L$, cannot differ from $P_b^T$ by more than $1-\sqrt{1-(20\%)^2}=1.01\%$. The total uncertainty
+in the PVDIS electron asymmetry can be estimated using
+\begin{eqnarray}
+ \frac{\Delta A}{A} &=& \frac{(\vert A_n^m\vert +\Delta A_n^m)}{A_e^m}\sqrt{\left[ S_V^2+(1.01\%)^2\right]} 
+= 0.0224\frac{\delta A_n^m}{A_e^m}
+\end{eqnarray}
+where $\delta A_n^m$ describes how much $A_n$ could differ from zero and is taken to be
+$\Delta A_n^m$ if the measured asymmetry is consistent with zero and $(\vert A_n^m\vert +\Delta A_n^m)$ otherwise;
+$A_e^m$ is the 
+measured PVDIS electron asymmetry.
+
+Results for
+the beam transverse asymmetry measurements are shown in Table~\ref{tab:ATbg} along with the 
+total uncertainty on the electron PVDIS asymmetry results duto beam transverse polarizations.
+
+\begin{table}
+ \caption{Results from the dedicated beam transverse asymmetry measurements and estimation
+of the total uncertainty on the PVDIS electron asymmetry due to beam transverse polarization.}\label{tab:ATbg}
+ \begin{center}
+\begin{tabular}{c|c|c}\hline
+  HRS                  & Left & Right \\
+  $Q^2$ (GeV/$c$)$^2$  & $1.1$ & $1.9$ \\\hline
+  $A_n^m$ (ppm, narrow)& $-24.15\pm 15.05$ & $23.49\pm 44.91$ \\
+  $A_n^m$ (ppm, wide)  & $-24.66\pm 15.01$    & $24.60\pm 44.90$\\
+  $A_e^m$ (ppm)       & $78.4$ & $-140.5$ \\
+  ${\Delta A}\over{A}$ & $0.014195$ & $0.00717$\\\hline
+\end{tabular}
+ \end{center}
+\end{table}
+
+
+Total error previously quoted: 0.34\%, 0.56\% (a factor of $\sin\theta_0$ was used which suppressed the effect).
+
+\subsubsection{Target Purity, Density Fluctuation and Other False Asymmetries}
+\label{sec:syst_purity}
+
+{\bf the following is copied from the proposal and must be revised.}\\
+
+% from the proposal
+The liquid deuterium used contains~\cite{target:purity} $1889$~ppm 
+HD, $<100$~ppm H$_2$, $4.4$~ppm N$_2$, $0.7$~ppm O$_2$, $1.5$~ppm CO 
+(carbon monoxide), $<1$~ppm methane and $0.9$~ppm CO$_2$ (carbon dioxide).  
+Compared to the statistical accuracy of the measurement ($\approx 1.1\%$ 
+in $A_d$), the only non-negligible contamination to the measured asymmetry 
+is from the proton in HD. Since the asymmetry of the proton is given 
+by~\cite{exp:e149_new}
+\begin{eqnarray}
+ A_p &=& \big(\frac{3G_F Q^2}{\pi\alpha 2\sqrt{2}}\big)
+	\frac{2C_{1u}u(x)-C_{1d}[d(x)+s(x)]+Y[2C_{2u}u_v(x)-C_{2d}d_v(x)]}
+	     {4u(x)+d(x)+s(x)} \label{equ:Asymp}
+\end{eqnarray}
+which is within $\pm 10\%$ of the asymmetry of the deuteron, the proton 
+in HD contributes $\delta{A_d}/A_d<0.02\%$ uncertainty to the measured asymmetry.
+%
+%\smallskip
+The Luminosity Monitor can make sure that the target density fluctuation is 
+less than $0.1$~ppm.  This is $<0.1\%$ uncertainty in the measured asymmetry.
+
+
+% from the proposal
+\subsection{Rescattering Background}\label{sec:syst_background}
+
+{\bf the following is copied from the proposal and must be revised.}\\
+
+The rescattering of high-energy electrons or pions from the walls of 
+the spectrometer creates a potential source of background for the proposed 
+measurement.   This ``rescattering'' background, which is typically 
+rejected using a combination of tracking and particle 
+identification in low-rate experiments without difficulty, must be treated
+carefully in this high-rate measurement due to the limited information 
+available in each event. 
+
+The magnitude of this effect will be combination of the
+probability for products of this scattering in the spectrometer to
+reach the detectors and the effectiveness of the 
+detector/DAQ package to distinguish those tracks from tracks 
+originating in the target.  A detailed analysis of this possible 
+problem will require a careful simulation of the spectrometer and 
+detector geometry.  Measurements will be taken
+with a low beam current (to allow the use of the tracking
+chambers and the standard DAQ) to study this small background and
+verify the accuracy of the simulation.
+
+Rescattering contribution has been studied by the previous HAPPEX II experiments
+in Hall A (HAPPEX-H: E99-115 and HAPPEX-He: E00-114)~\cite{HAPPEX-2005}. 
+These experiments used an analog-integrating detector, and therefore 
+had no method for excluding rescattered background particles. The method used 
+includes a series of dedicated elastic scattering measurements with a hydrogen target, 
+with the spectrometer tuned to place the hydrogen elastic peak at various points inside 
+the spectrometer.  The detected rate was used to estimate the 
+``rescattering probability'': the probability that an electron, 
+interacting at a given point in the spectrometer, 
+produces a count in the production DAQ. 
+In those measurements, the rescattering probability was found to be around 1\% 
+for momenta near to the central momenta (within a few percent of 
+$\delta p/p$). This probability rapidly dropped to $10^{-5}$ for 
+interactions with the spectrometer wall took place before the last 
+spectrometer quadrupole element (Q3). For HAPPEX-He, the rate of 
+quasi-elastic scattering from the Helium target which was steered 
+into the spectrometer walls was several times the elastic
+signal rate, leading to a rescattering in the focal plane on order 0.2\% of the
+detected elastic rate. It is reasonable to expect that the detected 
+rescattering signal in the proposed measurement will also form a dilution 
+at the few $10^{-3}$ level. Factors that would argue for a larger contribution, 
+such as the continuous DIS momentum distribution and the relatively open 
+spectrometer geometry, will be counteracted by the ability to exclude 
+background through position, energy, or PID information from the fast 
+counting DAQ. 
+
+One also have background from pion rescattering. 
+However, pions can be rejected by PID detectors reliably and will only have
+negligible contribution to the primary measurement. 
+
+Overall, we expect that the total rescattering rate to be at most at a few 
+$\times 10^{-3}$ level. And among these rescattered events, resonance 
+electrons and pions will only consist a small fraction. The rescattered
+DIS electrons may be the majority of these rescattering events but they have 
+very similar kinematics and $Q^2$ to the primary measurement thus will only 
+introduce a very small 
+dilution. Therefore we expect the total uncertainty due
+to the rescattered background to be in the $10^{-4}$ range.
