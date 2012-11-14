@@ -50,5 +50,29 @@ or the entrance to quadrupoles.
 Events that reach the HRS focal plane and intersect the detectors are integrated 
 to compute the total rate and average asymmetry.
 
+The acceptance of the HRS is generally defined by combining the openning geometry of the intermediate apertures, the norminal settings of which is documented in [Hall A NIM]. In real experiment, however, the edge of the opennings are not well defined, as events falling on the edge may correspond to electrons scattering from the aperture's material. Therefore, the real acceptance can be different from the norminal settings.We furtherly fine-tune the HRS acceptance of the simulation in the following way: taking the target variables of good events from data as the starting point, we use the same transport function as in HAMC to transport these data four-vectors to different apertures, and then read off the edges of the data patern as the real geometry to define the acceptance. This process is illustrated in Fig.~\ref{fig:hamc_acc}.
+
+\begin{figure}[!pt]
+\centering
+\includegraphics{DW/acceptance.eps}
+\caption{HAMC acceptance tuning. Plotted are the $x$ and $y$ cordinates of data events transported to different apertures. Black lines are the geometry shapes determined according to the data plots, which will be used as acceptance cuts in HAMC.}\label{fig:hamc_acc}
+\end{figure}
+
+\begin{figure}[!p]
+\centering
+\includegraphics{DW/compl_tg.eps}
+\includegraphics{DW/compl_Qx.eps}
+\caption{Comparison between HAMC and data for Left HRS kinematics \#1.}\label{fig:hamc_compl}
+\end{figure}
+
+\begin{figure}[!p]
+\centering
+\includegraphics{DW/compr_tg.eps}
+\includegraphics{DW/compr_Qx.eps}
+\caption{Comparison between HAMC and data for Right HRS kinematics \#2.}\label{fig:hamc_compr}
+\end{figure}
+
+The quality of ``hamc'' is checked by the comparison between simulation results and data on the target variables and kinematics variables. Fig.~\ref{fig:hamc_compl} (Fig.~\ref{fig:hamc_compr}) show such comparisons for Left (Right) HRS. The simulation agrees well with data. 
+
 Here describe ``hats'' ...
 
